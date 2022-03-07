@@ -28,9 +28,11 @@ $periodosNav = $conn->query("SELECT nombre FROM tiempo_maya.periodo order by ord
 
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <li>
-                  <button type="button" style="opacity: 0; height: 0;" class="nav-link" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  
+                <button type="button" style="opacity: 0; height: 0;" class="nav-link" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Uinal
                   </button>
+
                   <a class="nav-link" href="#" style="font-size: 13px;">Uniales </a>
                   <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <div div style="width: 200px; height: 400px; overflow-y: scroll;">

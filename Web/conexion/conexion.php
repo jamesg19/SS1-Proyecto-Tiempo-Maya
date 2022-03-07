@@ -1,7 +1,7 @@
 <?php
-$servername = "127.0.0.1";
+$servername = "localhost";
 $username_DB = "root";
-$password_DB = "password";
+$password_DB = "admin";
 $dbname = "tiempo_maya";
 
 // Create connection
@@ -10,6 +10,7 @@ if ($conn->connect_error) {
     echo 'Conexion fallida: ' . $conn->connect_error;
     die("Connection failed: " . $conn->connect_error);
 } else {
+    echo '';
     return $conn;
 }
 ?>

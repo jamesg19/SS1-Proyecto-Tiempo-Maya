@@ -7,8 +7,6 @@ $informacion = $conn->query("SELECT htmlCodigo,seccion,nombre FROM tiempo_maya.p
 $secciones = $conn->query("SELECT seccion FROM tiempo_maya.pagina WHERE categoria='" . $pagina . "' group by seccion  order by orden;");
 $elementos = $conn->query("SELECT nombre FROM tiempo_maya.pagina WHERE categoria='" . $pagina . "' AND nombre!='Informacion' AND seccion!='Informacion' order by orden;");
 
-
-
 ?>
 
 <!DOCTYPE html>

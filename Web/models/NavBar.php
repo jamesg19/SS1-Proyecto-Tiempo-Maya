@@ -82,6 +82,9 @@ $periodosNav = $conn->query("SELECT nombre FROM tiempo_maya.periodo order by ord
             <li class="nav-item">
               <a class="nav-link" href="paginaModelo.php?pagina=Rueda Calendarica">Rueda Calendarica</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="models/paginaModelo2.php?pagina=Ruleta Maya">Ruleta Maya</a>
+            </li>
             <li>
               <a class="nav-link" href="../linea_tiempo/LineaDeTiempo.php">Linea del Tiempo &nbsp;&nbsp;&nbsp;&nbsp; </a>
               <button type="button" style="opacity: 0; height: 0;" class="nav-link" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

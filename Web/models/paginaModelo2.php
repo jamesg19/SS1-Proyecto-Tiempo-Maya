@@ -39,7 +39,7 @@ $elementos = $conn->query("SELECT nombre FROM tiempo_maya.pagina WHERE categoria
 
 
     <div id="premio">
-
+<br><br><br>
 <table style=" margin: 0 auto;">
     <tr>
         <td>

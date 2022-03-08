@@ -2,16 +2,17 @@
 
 use function PHPSTORM_META\type;
 
-session_start(); ?>
+ ?>
 <?php
 
 $conn = include '../conexion/conexion.php';
 $tabla = $_GET['elemento'];
 $table =strtolower($tabla);
 if(strtolower($table) === 'uinal'){
+    
     $datos = $conn->query("SELECT nombre,significado,htmlCodigo,ruta FROM tiempo_maya." . $table . ";");
 }
-if(strtolower($table) === 'nahual'){
+else if(strtolower($table) === 'nahual'){
     $datos = $conn->query("SELECT nombre,significado,htmlCodigo,rutaEscritorio FROM tiempo_maya." . $table . ";");
 }else{
     $datos = $conn->query("SELECT nombre,significado,htmlCodigo FROM tiempo_maya." . $table . ";");
@@ -77,7 +78,7 @@ $informacion = $conn->query("SELECT htmlCodigo FROM tiempo_maya.pagina WHERE nom
                     if(strtolower($table) === 'uinal'){
                         $stringPrint="<div class='row'>  <div class='col'><img height=\"100px\" width=\"100px\" src='".$dato['ruta']."'></div> <div class='col'></div><div class='col'></div> </div>";
                     }
-                    if(strtolower($table) === 'nahual'){
+                    else if(strtolower($table) === 'nahual'){
                         $stringPrint="<div class='row'>  <div class='col'><img height=\"150px\" width=\"150px\" src='".$dato['rutaEscritorio']."'></div> <div class='col'></div><div class='col'></div> </div>";
                     }
                     else{

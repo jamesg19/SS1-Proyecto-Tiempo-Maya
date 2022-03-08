@@ -43,15 +43,56 @@ $elementos = $conn->query("SELECT nombre FROM tiempo_maya.pagina WHERE categoria
 <table style=" margin: 0 auto;">
     <tr>
         <td>
-            <p class="elije">ELIJE TU CORTESIA:</p>
+            <!-- <p class="elije"> NAHUAL:</p> -->
         </td>
-        <td><img src="image/cortesia.png" class="imgSorpresa"></td>
+        <td>
+            <!-- <img src="image/cortesia.png" class="imgSorpresa"> -->
+        </td>
 
     </tr>
     <tr>
         <td>
-            <p class="contador">TURNOS: 0</p>
+            <!-- <p class="contador">VUELTAS: 0</p> -->
         </td>
+    </tr>
+
+    <tr>
+    <!-- <img height="150px" width="150px" id="imagenNahual" name="imagenNahual" class="imagenNahual" src="src/imagenesNahuales/1.jpg" > -->
+    </tr>
+
+    <tr>
+    <div class="row">
+        <div class="col">
+            <p class="elije"> NAHUAL:</p>
+        </div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+    </div>
+
+
+    <div class="row">
+        <div class="col">
+            <H6 class="descripccionNahual"> </H6>
+        </div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+    </div>
+
+
+
+        <div class="row">
+        <div class="col">
+        <img height="150px" width="150px" id="imagenNahual" name="imagenNahual" class="imagenNahual" src="src/imagenesNahuales/15.jpg" >
+        </div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        </div>
     </tr>
 </table>
 
